@@ -24,23 +24,8 @@
     }
   }
 
-  async function registerFlutterServiceWorker() {
-    if (!('serviceWorker' in navigator)) {
-      return;
-    }
-
-    try {
-      await navigator.serviceWorker.register(
-        'flutter_service_worker.js?v={{flutter_service_worker_version}}'
-      );
-    } catch (error) {
-      console.warn('Service worker registration failed.', error);
-    }
-  }
-
   window.addEventListener('load', async function () {
     await warmOfflineCache();
-    await registerFlutterServiceWorker();
 
     _flutter.loader.load({
       serviceWorker: {
