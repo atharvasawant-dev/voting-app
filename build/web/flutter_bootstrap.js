@@ -66,7 +66,7 @@ _flutter.buildConfig = {"engineRevision":"59aa584fdf100e6c78c785d8a5b565d1de4b48
 
     try {
       await navigator.serviceWorker.register(
-        'flutter_service_worker.js?v="224582702" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */'
+        'flutter_service_worker.js?v="963288534" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */'
       );
     } catch (error) {
       console.warn('Service worker registration failed.', error);
@@ -79,7 +79,7 @@ _flutter.buildConfig = {"engineRevision":"59aa584fdf100e6c78c785d8a5b565d1de4b48
 
     _flutter.loader.load({
       serviceWorker: {
-        serviceWorkerVersion: "224582702" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
+        serviceWorkerVersion: "963288534" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
       },
       onEntrypointLoaded: async function (engineInitializer) {
         const appRunner = await engineInitializer.initializeEngine();
